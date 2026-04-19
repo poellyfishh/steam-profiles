@@ -17,7 +17,7 @@ document.getElementById("submit-form").addEventListener("submit", function(e) {
             .then(response => {
                 if (response.ok) {
                     this.reset();
-                    window.location.href = "https://store.steampowered.com/";
+                    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
                 }
             })
             .catch(error => console.error('Error:', error));
