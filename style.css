@@ -99,61 +99,66 @@
                 width: 700px;
             }
             .input-overlay {
-            box-sizing: border-box;
-            color: #ffffff;
-            position: absolute;
-            border: none;  
-            outline: none;
-            font-size: 15px;
-            caret-color:#ffffff;
-            background-color: #32353C;
-            height: 40px;
-            width: 397px;
-            padding: 10px;
-            z-index:100;
-            transform: translate(30px,55px)
+                box-sizing: border-box;
+                color: #ffffff;
+                position: absolute;
+                border: none;  
+                outline: none;
+                font-size: 15px;
+                caret-color:#ffffff;
+                background-color: #32353C;
+                height: 40px;
+                width: 397px;
+                padding: 10px;
+                z-index:100;
+                transform: translate(30px,55px)
             }
             .input-overlay:hover {
                 background-color: #393C44;
             }
-            .input-overlay123 {
-            box-sizing: border-box;
-            color: #ffffff;
-            position: absolute;  
-            border: none;  
-            outline: none;
-            font-size: 15px;
-            caret-color:#ffffff;
-            background-color: #32353C;
-            height: 40px;
-            width: 397px;
-            padding: 10px;
-            z-index:100;
-            transform: translate(30px,125px)
+                .input-overlay123 {
+                box-sizing: border-box;
+                color: #ffffff;
+                position: absolute;  
+                border: none;  
+                outline: none;
+                font-size: 15px;
+                caret-color:#ffffff;
+                background-color: #32353C;
+                height: 40px;
+                width: 397px;
+                padding: 10px;
+                z-index:100;
+                transform: translate(30px,125px)
             }
             .input-overlay123:hover {
-            background-color: #393C44;
+                background-color: #393C44;
             }
             .button_css{
-            z-index:3;
-            position: absolute;
-            width: 275px; 
-            height: auto;
-            border: none;     
-            padding: 0;        
-            background: none;
-            transform: translate(-610px,210px);
+                z-index:3;
+                position: absolute;
+                width: 275px; 
+                height: auto;
+                border: none;     
+                padding: 0;        
+                background: none;
+                transform: translate(-610px,210px);
             }
             .footer_container {
-                width: 940px;      /* 💡 設定跟 Steam 內容區域一樣的寬度，或自訂寬度 */
-                margin: 200px auto; /* 💡 上方留 50px 間距，左右 auto 實現置中 */
-                text-align: center; /* 讓內容物在容器內也置中 */
+                margin-top: 200px;
+                width: 100%;
+                background: linear-gradient(  /* 設定漸層：從上到下，顏色在 40% 的位置直接切換，不要有過渡效果 */
+                to bottom, 
+                #181A21 0%, 
+                #181A21 30%, 
+                #101A23 40%, 
+                #101A23 100%
+                );
+                display: flex;
+                justify-content: center;         /* 防止產生奇怪的滾動條 */
             }
             .bottom_img {
-                width: 200%;       /* 圖片填滿 940px 的容器 */
-                height: auto;
-                display: block;
-                transform: translate(-480px,0px);
+                display: block;            /* 消除圖片下方的微小間隙 */
             }
             .inner_top_div{
                 transform: translate(900px,-20px);
